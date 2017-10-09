@@ -26,24 +26,37 @@ namespace Week_3_DogClass
 
             //firstDog.Bark();
 
-            Dog dogTwo = new Dog("Fluffy", 4.04f);
-            Console.WriteLine(dogTwo.FurLength);
+            //Dog dogTwo = new Dog("Fluffy", 4.04f);
+            //Console.WriteLine(dogTwo.FurLength);
 
-            dogTwo.Groom();
+            //dogTwo.Groom();
 
-            Console.WriteLine(dogTwo.FurLength);
+            //Console.WriteLine(dogTwo.FurLength);
 
-            dogTwo.RunningSpeed = "Faster than Lighting";
-            Console.WriteLine(dogTwo.RunningSpeed);//user changed the variable running speed value
-            dogTwo.Run();
-            Console.WriteLine(dogTwo.RunningSpeed);//after calling the method, the running speed variable is back to original
+            //dogTwo.RunningSpeed = "Faster than Lighting";
+            //Console.WriteLine(dogTwo.RunningSpeed);//user changed the variable running speed value
+            //dogTwo.Run();
+            //Console.WriteLine(dogTwo.RunningSpeed);//after calling the method, the running speed variable is back to original
 
 
-            dogTwo.Weight = 78.9;
-            Console.WriteLine(dogTwo.Weight);
+            //dogTwo.Weight = 78.9;
+            //Console.WriteLine(dogTwo.Weight);
 
-            dogTwo.Potty();//need () when calling methods
-            Console.WriteLine(dogTwo.Weight);
+            //dogTwo.Potty();//need () when calling methods
+            //Console.WriteLine(dogTwo.Weight);
+
+            SuperHero villan = new SuperHero();
+            villan.VillanName = "Jason Voorhees";
+            villan.CanTrack = true;
+            villan.Weapon = "machette";
+            villan.Health = 100;
+
+            villan.LocatingPeople();
+            Console.WriteLine(villan.Health);
+
+            villan.Find();
+            Console.WriteLine(villan.VillanName);
+            Console.WriteLine(villan.Weapon);
         }
     }
 }
