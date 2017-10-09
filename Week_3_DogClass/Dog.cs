@@ -12,7 +12,7 @@ namespace Week_3_DogClass
         private string furLength;
         private float height;
         private string runningSpeed;
-        private int weight;
+        private double weight;
 
         //PROPERTIES
         public string FurLength
@@ -30,7 +30,7 @@ namespace Week_3_DogClass
             get { return this.runningSpeed; }
             set { this.runningSpeed = value; }
         }
-        public int Weight
+        public double Weight
         {
             get { return this.weight; }
             set { this.weight = value; }
@@ -42,7 +42,7 @@ namespace Week_3_DogClass
             //default constructor
             //USE A DEFAULT CONSTRUCTOR IF YOU WANT A CONSTRUCTOR WITH PARAMETERS
         }
-        
+
         //OVERLOADED CONSTRUCTOR
         //Can have as many OverLoaded Constructors
         //If you reverse the order of the states, it counts as a NEW Constructor
@@ -50,6 +50,31 @@ namespace Week_3_DogClass
         {
             this.furLength = furLength;
             this.height = height;
+        }
+
+        //METHODS
+        //--VOID METHODS--
+
+        public void Run()
+        {
+            //what happens to the dog, as the dog runs?
+            //choosing weight and running speed with short runs
+            runningSpeed = "getting faster";
+            weight--;
+        }
+
+        public void Bark()
+        {
+            Console.WriteLine("\a" + "\a");
+        }
+
+        public void Potty()
+        {
+            weight -= 0.1;
+        }
+        public void Groom()
+        {
+            furLength = "All cleaned up.";
         }
 
 
