@@ -66,7 +66,6 @@ namespace Week_3_DogClass
         public void Bark()
         {
             Console.WriteLine("\a" + "\a" + "\a" + "\a" );
-            Console.WriteLine("\a" + "\a" + "\a" + "\a");
         }
 
         public void Potty()
