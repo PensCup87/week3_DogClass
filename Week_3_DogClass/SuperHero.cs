@@ -41,13 +41,13 @@ namespace Week_3_DogClass
         {
 
         }
-
+        //First Class Constructor
         public SuperHero(string villanName, string weapon)
         {
             this.villanName = villanName;
             this.weapon = weapon;
         }
-
+        //Second Class Constructor
         public SuperHero(bool canTrack, double health)
         {
             this.canTrack = canTrack;
